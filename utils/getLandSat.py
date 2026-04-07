@@ -5,8 +5,8 @@ import geemap
 from datetime import date
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-ee.Authenticate()
-ee.Initialize()
+ee.Authenticate(auth_mode='notebook')
+ee.Initialize(project='ee-acossey11')
 print("Earth Engine initialized successfully.")
 
 
